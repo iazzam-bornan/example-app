@@ -1,8 +1,6 @@
 import * as postRepo from "@/repositories/post.repository";
 import { findUserByUsername } from "@/repositories/user.repository";
 
-console.log("postRepo:", postRepo);
-
 export async function getAllPosts() {
   return postRepo.findAllPosts();
 }
